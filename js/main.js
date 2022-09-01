@@ -35,10 +35,10 @@ const playGame = function(){
 
 playGame()
 
-function game(arr){
-    for(i=0;i<arr.length;i++){
-        console.log(playRound(arr[i],getComputerChoice()))
-    }
-}
+// function game(arr){
+//     for(i=0;i<arr.length;i++){
+//         console.log(playRound(arr[i],getComputerChoice()))
+//     }
+// }
 
 // game(['rock', 'paper', 'paper', 'scissors', 'rock'])
