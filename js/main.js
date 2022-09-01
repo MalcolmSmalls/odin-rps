@@ -10,7 +10,8 @@ const getComputerChoice = () => {
     }
 }
 
-console.log(getComputerChoice())
+let cpuChoice = getComputerChoice()
+
 
 const playRound = (playerSelection, computerSelection) => {
     let choice = playerSelection.toLowerCase()
@@ -27,4 +28,17 @@ const playRound = (playerSelection, computerSelection) => {
     }
 }
 
-console.log(playRound('paper','rock'))
+const playGame = function(){
+    let playerChoice = prompt('What is your choice?')
+    console.log(playRound(playerChoice, cpuChoice))
+}
+
+playGame()
+
+function game(arr){
+    for(i=0;i<arr.length;i++){
+        console.log(playRound(arr[i],getComputerChoice()))
+    }
+}
+
+// game(['rock', 'paper', 'paper', 'scissors', 'rock'])
