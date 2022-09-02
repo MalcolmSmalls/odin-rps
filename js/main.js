@@ -15,6 +15,15 @@ let cpuChoice = getComputerChoice()
 const rock = document.querySelector('rock-btn')
 const paper = document.querySelector('paper-btn')
 const scissors = document.querySelector('scissors-btn')
+const buttons = document.querySelectorAll('button')
+
+let playerChoice
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        playerChoice= button.value
+        console.log(playRound(playerChoice, cpuChoice))
+    })
+})
 
 
 
