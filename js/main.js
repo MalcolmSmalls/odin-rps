@@ -12,6 +12,11 @@ const getComputerChoice = () => {
 
 let cpuChoice = getComputerChoice()
 
+const rock = document.querySelector('rock-btn')
+const paper = document.querySelector('paper-btn')
+const scissors = document.querySelector('scissors-btn')
+
+
 
 const playRound = (playerSelection, computerSelection) => {
     let choice = playerSelection.toLowerCase()
@@ -28,12 +33,12 @@ const playRound = (playerSelection, computerSelection) => {
     }
 }
 
-const playGame = function(){
-    let playerChoice = prompt('What is your choice?')
-    console.log(playRound(playerChoice, cpuChoice))
-}
+// const playGame = function(){
+//     let playerChoice = prompt('What is your choice?')
+//     console.log(playRound(playerChoice, cpuChoice))
+// }
 
-playGame()
+// playGame()
 
 // function game(arr){
 //     for(i=0;i<arr.length;i++){
